@@ -30,7 +30,7 @@ app.use(express.urlencoded({ extended: true }));
 //connection to db, server only runs after connection is made
 // mongoose.set("useFindAndModify", false);
 
-mongoose.connect(process.env.DB_CONNECT, { useNewUrlParser: true }, () => {
+mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true }, () => {
     console.log("Connected to db!");
     app.listen(3000, () => console.log("Server Up and running"));
 });
