@@ -1,0 +1,30 @@
+{
+  "name": "todo-app-mongo",
+  "version": "1.0.0",
+  "description": "todo app with mongo database",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrew-peterson0429/todo-app-mongo.git"
+  },
+  "author": "Andrew Peterson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andrew-peterson0429/todo-app-mongo/issues"
+  },
+  "homepage": "https://github.com/andrew-peterson0429/todo-app-mongo#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.12",
+    "save": "^2.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  }
+}
