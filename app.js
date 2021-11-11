@@ -34,7 +34,7 @@ app.use(express.urlencoded({ extended: true }));
 if (port == null || port == "") {
   port = 8000;
 }
-app.listen(port);
+// app.listen(port);
 
 mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true }, () => {
     console.log("Connected to db!");
