@@ -9,10 +9,10 @@ const uri = `mongodb+srv://${mongoUser}:${monogPass}@cluster0.o6g5t.mongodb.net/
 
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 
-let port = process.env.PORT;
+/* let port = process.env.PORT;
 if (port == null || port == "") {
     port = 8000;
-}
+} */
 
 // app.listen(port);
 
