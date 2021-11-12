@@ -9,6 +9,13 @@ const uri = `mongodb+srv://${mongoUser}:${monogPass}@cluster0.o6g5t.mongodb.net/
 
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 
+let port = process.env.PORT;
+if (port == null || port == "") {
+    port = 8000;
+}
+
+// app.listen(port);
+
 // dotenv config();
 
 // console.log(uri)
@@ -29,12 +36,6 @@ app.use(express.urlencoded({ extended: true }));
 
 //connection to db, server only runs after connection is made
 // mongoose.set("useFindAndModify", false);
-
-// let port = process.env.PORT;
-if (port == null || port == "") {
-  port = 8000;
-}
-// app.listen(port);
 
 mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true }, () => {
     console.log("Connected to db!");
